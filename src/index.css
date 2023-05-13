@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  li {
+  .links {
     @apply p-4 flex;
   }
 }
