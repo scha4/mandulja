@@ -1,7 +1,15 @@
 import React from "react";
 
+import { ContactUs } from "../componenets/ContactUs";
+import ContactInfo from "../componenets/ContactInfo";
+
 function ContactPage() {
-  return <div>ContactPage</div>;
+  return (
+    <>
+      <ContactInfo />
+      <ContactUs />
+    </>
+  );
 }
 
 export default ContactPage;

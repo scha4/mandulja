@@ -8,22 +8,22 @@ function Navbar() {
   return (
     <>
       <div className="w-screen h-[50px] bg-red-600 text-white flex  justify-center items-center  ">
-        <p className="align-middle">Mandulja! Your perfect business partner</p>
+        <p className="align-middle">MANDEULJA! Your perfect business partner</p>
       </div>
       <div className="w-screen h-[80px] x-10 bg-white drop-shadow-lg">
         <div className="px-2 flex justify-between items-center w-full h-full">
           <div className="flex items-center">
-            <Link to="/Home">
-              <img src="./mandeuljalogo.png" className="w-32 h-20 mt-5" />
+            <Link to="/">
+              <img src="./mandeuljalogo.png" className="w-28 h-18  " />
             </Link>
-            <ul className="hidden md:flex absolute  top-0 right-0 mt-3 mr-1">
-              <Link to="/Business" className="links">
+            <ul className="hidden md:flex absolute  top-0 right-0 mt-3 mr-1  ">
+              <Link to="/Business" className="links  hover:text-orange-400">
                 Business
               </Link>
-              <Link to="/Service" className="links">
+              <Link to="/Service" className="links  hover:text-orange-400">
                 Service Plan
               </Link>
-              <Link to="/Contact" className="links">
+              <Link to="/Contact" className="links  hover:text-orange-400">
                 Contact
               </Link>
             </ul>
@@ -36,7 +36,7 @@ function Navbar() {
           className={
             !nav
               ? "hidden"
-              : "absolute bg-red-600 w-full px-8 text-white flex flex-col h-48 space-y-4 place-content-evenly"
+              : "absolute  delay-100 bg-red-600 w-full px-8 text-white flex flex-col h-48 space-y-4 place-content-evenly"
           }
         >
           <Link to="/Business" className="border-b2 border-zinc-300 w-full">
