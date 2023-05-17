@@ -11,9 +11,9 @@ import CardData from "./CardData";
 function OurService() {
   return (
     <>
-      <div className=" bg-blue-gray-50 pb-14 md:flex items-center justify-center lg:grid grid-cols-2 h-auto ">
+      <div className=" bg-blue-gray-50 pb-14 pt-3 md:flex items-center justify-center lg:grid grid-cols-2 h-auto ">
         <div className="col-span-1 flex flex-col space-y-7 ml-5 mt-9">
-          <h1 className="text-orange-400 text-xl">Our Service</h1>
+          <h1 className="text-orange-400 text-xl font-bold">Our Service</h1>
           <h1 className="text-3xl font-bold">
             구인이 힘든 시점 해결점을 찾아가다!
           </h1>

@@ -2,6 +2,7 @@ import React from "react";
 import person from "../Data.js";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className=" w-screen h-44 flex  justify-center items-center  ">
       <div className=" text-center align-middle">
@@ -10,6 +11,7 @@ function Footer() {
         <p className="text-black">
           전화 : 070-4012-1168 | E-mail : gofggofg@naver.com
         </p>
+        <p>&copy; {currentYear} MANDEULJA All Right Reserved.</p>
       </div>
     </footer>
   );
