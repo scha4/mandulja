@@ -36,7 +36,7 @@ function Navbar() {
           className={
             !nav
               ? "hidden"
-              : "absolute delay-100 bg-red-600 w-full px-8 text-white flex flex-col h-48 space-y-4 place-content-evenly z-20"
+              : "absolute delay-100 bg-red-600 w-full px-8 text-white flex flex-col h-48 space-y-4 place-content-evenly z-20  rounded-b-lg border border-y-white "
           }
         >
           <Link to="/Business" className="border-b2 border-zinc-300 w-full">

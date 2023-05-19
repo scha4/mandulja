@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../componenets/Carousel";
+import CarouselSlider from "../componenets/Carousel";
 import Solution from "../componenets/Solution";
 import Grid from "../componenets/Grid";
 import { ContactUs } from "../componenets/ContactUs";
@@ -9,7 +9,7 @@ import OurService from "../componenets/OurService";
 function HomePage() {
   return (
     <>
-      <Carousel />
+      <CarouselSlider />
       <Solution />
       <Grid />
       <KoreaIssues />

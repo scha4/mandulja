@@ -4,8 +4,8 @@ import ProcessCard from "./ProcessCard";
 function Process() {
   return (
     <>
-      <div className="flex flex-col items-center mt-20 bg-blue-gray-50 pt-5 pb-10">
-        <h1 className="text-3xl font-bold">OEM / ODM PROCESS</h1>
+      <div className="flex flex-col items-center  bg-blue-gray-50 pt-5 pb-10">
+        <h1 className="text-3xl font-bold mt-5">OEM / ODM PROCESS</h1>
         <p className="text-lg ml-3 mr-3 mt-3">
           원하시는 제품 또는 원하는 형태의 요구사항을 준비하시면 빠른 진행이
           가능합니다.

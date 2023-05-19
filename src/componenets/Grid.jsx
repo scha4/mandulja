@@ -44,27 +44,30 @@ function Grid() {
           <p>Marketing Guide</p>
         </div>
       </div>
-      <div
-        className="md:hidden  w-full text-center ml-3 mr-3 border-2 border-black mt-6
+      {/* mobile */}
+      <div className="flex items-center justify-center pt-5">
+        <div
+          className=" md:hidden  w-5/6 text-center  border-2 border-black mt-6
       "
-      >
-        <div className="border border-black p-6 flex flex-col items-center">
-          <MdLocalShipping size={60} />
-          <h1 className="font-bold text-4xl ">샘플발주</h1>
+        >
+          <div className="border border-black p-6 flex flex-col items-center">
+            <MdLocalShipping size={60} />
+            <h1 className="font-bold text-4xl ">샘플발주</h1>
 
-          <p>Sample Ordering</p>
-        </div>
-        <div className="border border-black p-6 flex flex-col items-center ">
-          <AiFillSetting size={60} />
-          <h1 className="font-bold text-4xl">OEM/ODM</h1>
+            <p>Sample Ordering</p>
+          </div>
+          <div className="border border-black p-6 flex flex-col items-center ">
+            <AiFillSetting size={60} />
+            <h1 className="font-bold text-4xl">OEM/ODM</h1>
 
-          <p>OEM/ODM</p>
-        </div>
-        <div className="border border-black p-6  flex flex-col items-center">
-          <FcAdvertising size={60} />
-          <h1 className="font-bold text-4xl">마케팅</h1>
+            <p>OEM/ODM</p>
+          </div>
+          <div className="border border-black p-6  flex flex-col items-center">
+            <FcAdvertising size={60} />
+            <h1 className="font-bold text-4xl">마케팅</h1>
 
-          <p>Marketing Guide</p>
+            <p>Marketing Guide</p>
+          </div>
         </div>
       </div>
     </>
