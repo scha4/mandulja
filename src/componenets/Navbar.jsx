@@ -7,10 +7,10 @@ function Navbar() {
   const handleClick = () => setNav(!nav);
   return (
     <>
-      <div className="w-screen h-[50px] bg-red-600 text-white flex  justify-center items-center  ">
+      <div className="w-screen h-[50px] bg-red-600 text-white flex  justify-center items-center    ">
         <p className="align-middle">MANDEULJA! Your perfect business partner</p>
       </div>
-      <div className="w-screen h-[80px] x-10 bg-white drop-shadow-lg">
+      <div className="w-screen h-[80px] x-10 bg-white drop-shadow-lg relative z-10">
         <div className="px-2 flex justify-between items-center w-full h-full">
           <div className="flex items-center">
             <Link to="/">
@@ -36,7 +36,7 @@ function Navbar() {
           className={
             !nav
               ? "hidden"
-              : "absolute delay-100 bg-red-600 w-full px-8 text-white flex flex-col h-48 space-y-4 place-content-evenly z-20  rounded-b-lg border border-y-white "
+              : "delay-100 bg-red-600 w-full px-8 text-white flex flex-col h-48 space-y-4 place-content-evenly rounded-b-lg border border-y-white "
           }
         >
           <Link to="/Business" className="border-b2 border-zinc-300 w-full">
