@@ -2,66 +2,71 @@ import React from "react";
 import { useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { RxDotFilled } from "react-icons/rx";
+import { Carousel, Typography, Button } from "@material-tailwind/react";
 function CarouselSlider() {
-  const slides = [
-    {
-      url: "https://images.unsplash.com/photo-1683580607825-9d270ddbb3c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1683386478393-432ce81a8dd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2942&q=80",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1683490483134-3bfd76d9d5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80",
-    },
-  ];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const prevSlide = () => {
-    const firstSlide = currentIndex === 0;
-    const newIndex = firstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
   return (
-    <div className="max-w-[1200px] h-[600px] w-full pb-10 px-1 group m-auto  mt-3  ">
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-cover bg-center duration-500 relative "
-      >
-        {/* leftarrow */}
-        <div className="">
-          <div className="   group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
-            <AiOutlineArrowLeft onClick={prevSlide} size={30} />
-          </div>
-          {/* rightarrow */}
-          <div className="place-self-end">
-            <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-              <AiOutlineArrowRight onClick={nextSlide} size={30} />
-            </div>
+    <Carousel className="rounded-xl ">
+      <div className="relative  h-[600px] w-full">
+        <img
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          alt="image 1"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 grid h-full w-full place-items-center ">
+          <div className="w-full bg-black/75 py-2  text-center ">
+            <Typography
+              variant="lead"
+              color="white"
+              className=" md:text-3xl font-bold text-lg"
+            >
+              우리는 글로벌 OEM 서비스를 제공하는 회사입니다. 다양한 산업
+              분야에서 고품질 제조와 맞춤형 솔루션을 제공하여 고객의 요구를
+              충족시킵니다.
+            </Typography>
           </div>
         </div>
       </div>
-      <div className="flex top-4 justify-center py-2">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
-          >
-            <RxDotFilled />
+      <div className="relative  h-[600px] w-full">
+        <img
+          src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          alt="image 2"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 grid h-full w-full place-items-center ">
+          <div className="w-full bg-black/75 py-2  text-center ">
+            <Typography
+              variant="lead"
+              color="white"
+              className="md:text-3xl font-bold text-lg "
+            >
+              우리는 글로벌 OEM 서비스를 제공하는 회사입니다. 다양한 산업
+              분야에서 고품질 제조와 맞춤형 솔루션을 제공하여 고객의 요구를
+              충족시킵니다.
+            </Typography>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+      <div className="relative h-[600px]  w-full">
+        <img
+          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          alt="image 3"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 grid h-full w-full place-items-center ">
+          <div className="w-full text-center  bg-black/75 py-2 ">
+            <Typography
+              variant="lead"
+              color="white"
+              className="md:text-3xl font-bold text-lg  "
+            >
+              우리는 글로벌 OEM 서비스를 제공하는 회사입니다. 다양한 산업
+              분야에서 고품질 제조와 맞춤형 솔루션을 제공하여 고객의 요구를
+              충족시킵니다.
+            </Typography>
+          </div>
+        </div>
+      </div>
+    </Carousel>
   );
 }
 

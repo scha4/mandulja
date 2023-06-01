@@ -4,6 +4,7 @@ import { GiFactory } from "react-icons/gi";
 import { MdFactory } from "react-icons/md";
 import { AiFillSetting, AiFillSafetyCertificate } from "react-icons/ai";
 import { FcAdvertising } from "react-icons/fc";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 
 function Grid() {
   return (
@@ -38,8 +39,8 @@ function Grid() {
           <p>Product Certified</p>
         </div>
         <div className="border border-black p-6  flex flex-col items-center">
-          <FcAdvertising size={60} />
-          <h1 className="font-bold text-4xl">마케팅</h1>
+          <BsFillCheckCircleFill size={60} />
+          <h1 className="font-bold text-4xl">공장인증</h1>
 
           <p>Marketing Guide</p>
         </div>
@@ -63,8 +64,8 @@ function Grid() {
             <p>OEM/ODM</p>
           </div>
           <div className="border border-black p-6  flex flex-col items-center">
-            <FcAdvertising size={60} />
-            <h1 className="font-bold text-4xl">마케팅</h1>
+            <BsFillCheckCircleFill size={60} />
+            <h1 className="font-bold text-4xl">공장인증</h1>
 
             <p>Marketing Guide</p>
           </div>

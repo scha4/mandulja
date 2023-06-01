@@ -19,12 +19,12 @@ function ContactInfo() {
           <div className="bg-white w-64 h-32 flex flex-col items-center justify-center rounded-lg">
             <AiOutlineMail size={40} className="fill-orange-400" />
             <h2>E-MAIL</h2>
-            <h2 className="font-bold text-xl">liminjun54@naver.com</h2>
+            <h2 className="font-bold text-xl">mandeulja@naver.com</h2>
           </div>
           <div className="bg-white w-64 h-32 flex flex-col items-center justify-center rounded-lg ">
             <BsFillTelephoneFill size={40} className="fill-orange-400" />
             <h2>TEL</h2>
-            <h2 className="font-bold text-xl">010-7638-9902</h2>
+            <h2 className="font-bold text-xl">010-9383-9689</h2>
           </div>
           <div className="bg-white w-64 h-32 flex flex-col items-center justify-center rounded-lg ">
             <RiKakaoTalkFill size={40} className="fill-orange-400" />
