@@ -11,8 +11,9 @@ function Navbar() {
         <div className="px-2 flex justify-between items-center w-full h-full">
           <div className="flex items-center">
             <Link to="/">
-              <img src="./mandeuljalogo.png" className="w-28 h-18  " />
+              <img src="./mandeuljalogo.png" className="w-24 h-18  " />
             </Link>
+
             <ul className="hidden md:flex absolute  top-0 right-0 mt-3 mr-1  ">
               <Link to="/Business" className="links  hover:text-orange-400">
                 Business

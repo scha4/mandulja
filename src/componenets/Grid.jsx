@@ -3,46 +3,24 @@ import { MdLocalShipping } from "react-icons/md";
 import { GiFactory } from "react-icons/gi";
 import { MdFactory } from "react-icons/md";
 import { AiFillSetting, AiFillSafetyCertificate } from "react-icons/ai";
-import { FcAdvertising } from "react-icons/fc";
-import { BsFillCheckCircleFill } from "react-icons/bs";
+import { FaSearch } from "react-icons/fa";
+import { BsFillCheckCircleFill, BsBoxSeam } from "react-icons/bs";
 
 function Grid() {
   return (
     <>
-      <div className=" hidden md:grid grid-row-2 grid-flow-rows grid-cols-3  text-center  border-2 border-black mr-3 ml-3 mt-9">
-        <div className="border border-black p-6 flex flex-col items-center">
-          <MdLocalShipping size={60} />
-          <h1 className="font-bold text-4xl ">샘플발주</h1>
-
-          <p>Sample Ordering</p>
+      <div className=" hidden md:grid grid-row-2 grid-flow-rows grid-cols-3  text-center gap-2   mr-3 ml-3 mt-9">
+        <div className="border-2 border-black p-6 flex flex-col items-center bg-orange-400">
+          <BsBoxSeam size={60} />
+          <h1 className="font-bold text-3xl mt-2 ">샘플발주/제품수입</h1>
         </div>
-        <div className="border border-black p-6 flex flex-col items-center">
-          <GiFactory size={60} />
-          <h1 className="font-bold text-4xl">소량생산</h1>
-          <p>Small Production</p>
+        <div className="border-2 border-black p-6 flex flex-col items-center bg-orange-400 ">
+          <FaSearch size={60} />
+          <h1 className="font-bold text-3xl mt-2">제품소싱/공장소싱</h1>
         </div>
-        <div className="border border-black p-6  flex flex-col items-center">
-          <MdFactory size={60} />
-          <h1 className="font-bold text-4xl">대량생산</h1>
-          <p>Mass Production</p>
-        </div>
-        <div className="border border-black p-6 flex flex-col items-center ">
+        <div className="border-2 border-black p-6 flex flex-col items-center bg-orange-400">
           <AiFillSetting size={60} />
-          <h1 className="font-bold text-4xl">OEM/ODM</h1>
-
-          <p>OEM/ODM</p>
-        </div>
-        <div className="border border-black p-6 flex flex-col items-center ">
-          <AiFillSafetyCertificate size={60} />
-          <h1 className="font-bold text-4xl">제품인증</h1>
-
-          <p>Product Certified</p>
-        </div>
-        <div className="border border-black p-6  flex flex-col items-center">
-          <BsFillCheckCircleFill size={60} />
-          <h1 className="font-bold text-4xl">공장인증</h1>
-
-          <p>Marketing Guide</p>
+          <h1 className="font-bold text-3xl mt-2">제품개발/OEM/ODM</h1>
         </div>
       </div>
       {/* mobile */}
@@ -51,23 +29,17 @@ function Grid() {
           className=" md:hidden  w-5/6 text-center  border-2 border-black mt-6
       "
         >
-          <div className="border border-black p-6 flex flex-col items-center">
-            <MdLocalShipping size={60} />
-            <h1 className="font-bold text-4xl ">샘플발주</h1>
-
-            <p>Sample Ordering</p>
+          <div className="border-2 border-black p-6 flex flex-col items-center bg-orange-400">
+            <BsBoxSeam size={60} />
+            <h1 className="font-bold text-3xl mt-2 ">샘플발주/제품수입</h1>
           </div>
-          <div className="border border-black p-6 flex flex-col items-center ">
+          <div className="border-2 border-black p-6 flex flex-col items-center bg-orange-400 ">
+            <FaSearch size={60} />
+            <h1 className="font-bold text-3xl mt-2">제품소싱/공장소싱</h1>
+          </div>
+          <div className="border-2 border-black p-6 flex flex-col items-center bg-orange-400">
             <AiFillSetting size={60} />
-            <h1 className="font-bold text-4xl">OEM/ODM</h1>
-
-            <p>OEM/ODM</p>
-          </div>
-          <div className="border border-black p-6  flex flex-col items-center">
-            <BsFillCheckCircleFill size={60} />
-            <h1 className="font-bold text-4xl">공장인증</h1>
-
-            <p>Marketing Guide</p>
+            <h1 className="font-bold text-3xl mt-2">제품개발/OEM/ODM</h1>
           </div>
         </div>
       </div>

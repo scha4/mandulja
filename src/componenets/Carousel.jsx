@@ -39,9 +39,8 @@ function CarouselSlider() {
               color="white"
               className="md:text-3xl font-bold text-lg "
             >
-              우리는 글로벌 OEM 서비스를 제공하는 회사입니다. 다양한 산업
-              분야에서 고품질 제조와 맞춤형 솔루션을 제공하여 고객의 요구를
-              충족시킵니다.
+              최신 기술과 혁신적인 생산 방법을 활용하여 우리의 고객들의 비전을
+              현실로 만들어내기 위해 노력하고 있습니다.
             </Typography>
           </div>
         </div>
@@ -59,9 +58,8 @@ function CarouselSlider() {
               color="white"
               className="md:text-3xl font-bold text-lg  "
             >
-              우리는 글로벌 OEM 서비스를 제공하는 회사입니다. 다양한 산업
-              분야에서 고품질 제조와 맞춤형 솔루션을 제공하여 고객의 요구를
-              충족시킵니다.
+              우리는 고객의 비즈니스 성공을 위해 탁월한 품질과 신속한 생산력을
+              보장합니다.
             </Typography>
           </div>
         </div>
